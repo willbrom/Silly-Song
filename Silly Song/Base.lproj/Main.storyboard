@@ -18,30 +18,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Generate a Silly Song!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMa-EV-CR2">
-                                <rect key="frame" x="16" y="20" width="343" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Silly Song!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMa-EV-CR2">
+                                <rect key="frame" x="42" y="20" width="291" height="101"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="291" id="3GA-vC-cgc"/>
+                                    <constraint firstAttribute="height" constant="101" id="CEg-j2-BJy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="39"/>
+                                <color key="textColor" red="0.56055247783660889" green="0.20706579089164734" blue="0.63074743747711182" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LtM-yu-ob7">
-                                <rect key="frame" x="139" y="129" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter name here..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LtM-yu-ob7">
+                                <rect key="frame" x="16" y="119" width="343" height="30"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zUR-Uk-yoa">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zUR-Uk-yoa">
                                 <rect key="frame" x="67" y="183" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Bbk-y7-gfc"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="HJz-5P-1v0"/>
+                                    <constraint firstAttribute="width" constant="240" id="kaq-0g-5x6"/>
+                                </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" red="0.65528649091720581" green="0.96009927988052368" blue="0.26963254809379578" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.3158109188079834" green="0.78563374280929565" blue="0.97567921876907349" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LtM-yu-ob7" firstAttribute="top" secondItem="gMa-EV-CR2" secondAttribute="bottom" constant="-2" id="1q5-EW-RLl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LtM-yu-ob7" secondAttribute="trailing" constant="16" id="8wb-IG-fgM"/>
+                            <constraint firstItem="LtM-yu-ob7" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ADm-7j-nZh"/>
+                            <constraint firstItem="LtM-yu-ob7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="VUb-d1-WIa"/>
+                            <constraint firstItem="gMa-EV-CR2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bCl-M7-lW9"/>
+                            <constraint firstItem="zUR-Uk-yoa" firstAttribute="centerX" secondItem="LtM-yu-ob7" secondAttribute="centerX" id="fiJ-30-Ey4"/>
+                            <constraint firstItem="zUR-Uk-yoa" firstAttribute="top" secondItem="LtM-yu-ob7" secondAttribute="bottom" constant="34" id="hUA-9a-SG2"/>
+                            <constraint firstItem="gMa-EV-CR2" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="upm-eC-33x"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
